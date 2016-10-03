@@ -3,17 +3,17 @@
  */
 var express = require("express");
 var router = express.Router();
-var cors = require("cors");
+//var cors = require("cors");
 var connection = require("../config/database");
 ObjectId=require('mongodb').ObjectId;
 
 
-router.all("/register", cors(), function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header['Access-Control-Allow-Methods'] = 'GET,HEAD,PUT,PATCH,POST,DELETE'
-    res.header['Access-Control-Allow-Headers'] = ' Content-Type, Accept';
-    next();
-})
+//router.all("/register", cors(), function (req, res, next) {
+//    res.header("Access-Control-Allow-Origin", "*");
+//    res.header['Access-Control-Allow-Methods'] = 'GET,HEAD,PUT,PATCH,POST,DELETE'
+//    res.header['Access-Control-Allow-Headers'] = ' Content-Type, Accept';
+//    next();
+//})
 
 
 
