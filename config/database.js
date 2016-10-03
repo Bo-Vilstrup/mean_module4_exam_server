@@ -23,6 +23,10 @@ var connect = function(connectionString, done) {
       return done(err);
     }
     connection = db;
+
+    connection.collection("friends").createIndex({"created": 1},{expireAfterSeconds:30*60 } );
+    connection.collection("friends").createIndex({loc:"2dsphere"});
+
     done();
   })
 }
